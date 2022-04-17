@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="stil.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+
+  <div id="container">
+    <div class="row">
+      <h2 id="plays">Igrač 1 je na potezu</h2>
+    </div>
+    <div class="row">
+      <div class="col-2-players">
+        <h3>Igrač 1</h3>
+        <h3>Bodovi:</h3>
+        <h3 id="score1"></h3>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="box" id="id0" onclick='ShowNumber("id0", 0)'></div>
+          <div class="box" id="id1" onclick='ShowNumber("id1", 1)'></div>
+          <div class="box" id="id2" onclick='ShowNumber("id2", 2)'></div>
+          <div class="box" id="id3" onclick='ShowNumber("id3", 3)'></div>
+          <div class="box" id="id4" onclick='ShowNumber("id4", 4)'></div>
+        </div>
+
+        <div class="row">
+          <div class="box" id="id5" onclick='ShowNumber("id5", 5)'></div>
+          <div class="box" id="id6" onclick='ShowNumber("id6", 6)'></div>
+          <div class="box" id="id7" onclick='ShowNumber("id7", 7)'></div>
+          <div class="box" id="id8" onclick='ShowNumber("id8", 8)'></div>
+          <div class="box" id="id9" onclick='ShowNumber("id9", 9)'></div>
+        </div>
+
+        <div class="row">
+          <div class="box" id="id10" onclick='ShowNumber("id10", 10)'></div>
+          <div class="box" id="id11" onclick='ShowNumber("id11", 11)'></div>
+          <div class="box" id="id12" onclick='ShowNumber("id12", 12)'></div>
+          <div class="box" id="id13" onclick='ShowNumber("id13", 13)'></div>
+          <div class="box" id="id14" onclick='ShowNumber("id14", 14)'></div>
+        </div>
+
+        <div class="row">
+          <div class="box" id="id15" onclick='ShowNumber("id15", 15)'></div>
+          <div class="box" id="id16" onclick='ShowNumber("id16", 16)'></div>
+          <div class="box" id="id17" onclick='ShowNumber("id17", 17)'></div>
+          <div class="box" id="id18" onclick='ShowNumber("id18", 18)'></div>
+          <div class="box" id="id19" onclick='ShowNumber("id19", 19)'></div>
+        </div>
+
+        <div class="row">
+          <div class="box" id="id20" onclick='ShowNumber("id20", 20)'></div>
+          <div class="box" id="id21" onclick='ShowNumber("id21", 21)'></div>
+          <div class="box" id="id22" onclick='ShowNumber("id22", 22)'></div>
+          <div class="box" id="id23" onclick='ShowNumber("id23", 23)'></div>
+          <div class="box" id="id24" onclick='ShowNumber("id24", 24)'></div>
+        </div>
+      </div>
+      <div class="col-2-players">
+        <h3>Igrač 2</h3>
+        <h3>Bodovi:</h3>
+        <h3 id="score2"></h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="game-winner" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Pobjednik</h5>
+        </div>
+        <div class="modal-body">
+          <p id="winner"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="NewGame()">Nova igra</button>
+          <a class="btn btn-secondary" href="index.html">Zatvori</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

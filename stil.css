@@ -1,0 +1,44 @@
+body {
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+  margin-top: 2%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 10vw;
+  height: 15vh;
+  background: linear-gradient(
+    to bottom,
+    #8e9eab,
+    #eef2f3
+  );
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.players {
+  text-align: center;
+}
+
+#plays {
+  color: aliceblue;
+}
+
+.col-2-players {
+  color: aliceblue;
+}
+

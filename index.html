@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="naslov">
+        <h1>CardS</h1>
+    </div>
+
+    <div class="meni">
+
+        <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#meni" id="button"
+            onclick="vidljivost()">
+            Igra - Opcije
+        </button>
+
+        <div class="collapse" id="meni">
+            <div class="options">
+                <div id="list">
+                    <h1 id="odabir">Izaberite opciju!</h1>
+                    <a href="igra.html" class="opcija">Nova igra</a>
+                    <a href="#" data-toggle="modal" data-target="#upute" class="opcija">
+                        Upute
+                    </a>
+                    <div class="modal fade" id="upute" tabindex="-1" role="dialog" aria-labelledby="uputeLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="uputeLabel">Upute</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Igrica se sastoji od ploče 5x5 na kojoj se nalazi 25 kartica. Igraju dva igrača
+                                    naizmjenično.
+                                    Igrač koji je na potezu bira jednu karticu. Ispod svake kartice nalazi se neki broj
+                                    od 1 do 10,
+                                    koji je dodijeljen slučajnim odabirom. Igrači biraju kartice sve dok neko ne
+                                    dostigne 50
+                                    bodova. Nakon otvaranja neke od kartica igraču koji je na potezu dodaje se na zbir
+                                    osvojenih bodova broj koji se nalazio iza otvorene kartice. Nakon toga zatvori se
+                                    kartica. Broj
+                                    koji se nalazio iza te kartice ostaje iza nje onoliko puta koliki je zbir reda i
+                                    kolone u kojima se
+                                    nalazi odabrana kartica. Nakon što se dostigne taj broj (zbir reda i kolone), ta
+                                    kartica dobija
+                                    novi broj. Pored toga, na nekim mjestima na ploči postoje dva specijalna polja:
+                                    smješko i
+                                    ljutko. Ukoliko igrač otvori polje na kojem se nalazi smješko, tada se bodovi tog
+                                    igrača
+                                    uduplaju. Ukoliko igrač otvori polje na kojem se nalazi ljutko, tada igrač koji je
+                                    odigrao taj
+                                    potez gubi sve bodove, tj. od tog momenta igru nastavlja sa 0 bodova. Nakon
+                                    otvaranja
+                                    smješta ili ljutka, iza kartice se bira novi broj, dok smješko i ljutko prelaze na
+                                    drugu (slučajnu)
+                                    poziciju. U početku se na ploči nalaze 4 smješka i 4 ljutka.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Zatvori</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" data-toggle="modal" data-target="#projekat" class="opcija">
+                        O projektu
+                    </a>
+                    <div class="modal fade" id="projekat" tabindex="-1" role="dialog" aria-labelledby="projekatLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="projekatLabel">O projektu</h5>
+
+                                </div>
+                                <div class="modal-body1">
+                                    <ul id="info">
+                                        <li>Web programiranje</li>
+                                        <ul style="list-style-type: none;">
+                                            <li>Elmedin Selmanović</li>
+                                            <li>Eldina Maslo</li>
+                                        </ul>
+                                        <li>Informacione Tehnlogoije</li>
+                                        <li>Prirodno-Matematički Fakultet</li>
+                                        <li>Projekat : CardS</li>
+                                        <li>Podaci o autoru:</li>
+                                        <ul style="list-style-type: none;">
+                                            <li>Rijad Imširović</li>
+                                            <li>Mobitel : 062-503-418</li>
+                                            <li>E-Mail: rijad.imsirovic@yahoo.com</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Zatvori</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <p id="tekst">Dobrodošli na moj drugi projekat!</p>
+        <p>Da započnete igru pritisnite dugme Igraj</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function vidljivost() {
+            var x = document.getElementById('main');
+            if (x.style.visibility === 'hidden') {
+                x.style.visibility = 'visible';
+            } else {
+                x.style.visibility = 'hidden';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
